@@ -1,0 +1,352 @@
+/* Thème sombre bleu pour Gestion des Tâches */
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #1e40af;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --info-color: #06b6d4;
+    --dark-color: #1e293b;
+    --darker-bg: #0f172a;
+    --light-bg: #1e293b;
+    --white: #f8fafc;
+    --border-color: #334155;
+    --text-muted: #94a3b8;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles généraux */
+body {
+    background: var(--darker-bg);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--white);
+}
+
+/* Layout principal */
+#layoutSidenav {
+    background: var(--light-bg);
+    border-radius: 12px;
+    margin: 16px;
+    box-shadow: var(--shadow-lg);
+    min-height: calc(100vh - 32px);
+}
+
+/* Sidebar */
+.sb-sidenav {
+    background: var(--dark-color) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav-link {
+    color: var(--white) !important;
+    border-radius: 8px;
+    margin: 4px 12px;
+    padding: 10px 16px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav-link:hover {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav-link.active {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.sb-sidenav-menu-heading {
+    color: var(--text-muted) !important;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 16px 16px 8px 16px;
+}
+
+/* Navbar */
+.navbar-dark {
+    background: var(--dark-color) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--white) !important;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white) !important;
+}
+
+/* Cards */
+.card {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-md);
+    transition: all 0.2s ease;
+    background: var(--light-bg);
+    color: var(--white);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-1px);
+}
+
+.card-header {
+    background: var(--dark-color) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    padding: 16px 20px;
+}
+
+/* Boutons */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.btn-success {
+    background: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+    color: var(--white) !important;
+}
+
+.btn-warning {
+    background: var(--warning-color) !important;
+    border-color: var(--warning-color) !important;
+    color: var(--dark-color) !important;
+}
+
+.btn-danger {
+    background: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+    color: var(--white) !important;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.btn-outline-warning {
+    border-color: var(--warning-color) !important;
+    color: var(--warning-color) !important;
+}
+
+.btn-outline-warning:hover {
+    background: var(--warning-color) !important;
+    color: var(--dark-color) !important;
+}
+
+.btn-outline-danger {
+    border-color: var(--danger-color) !important;
+    color: var(--danger-color) !important;
+}
+
+.btn-outline-danger:hover {
+    background: var(--danger-color) !important;
+    color: var(--white) !important;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}
+
+/* Badges */
+.badge {
+    border-radius: 6px !important;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+}
+
+/* Alertes */
+.alert {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 12px 16px;
+    background: var(--light-bg) !important;
+    color: var(--white) !important;
+}
+
+.alert-danger {
+    background: #7f1d1d !important;
+    color: #fca5a5 !important;
+    border-color: #991b1b !important;
+}
+
+/* Formulaires */
+.form-control, .form-select {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 10px 14px;
+    transition: all 0.2s ease;
+    background: var(--dark-color) !important;
+    color: var(--white) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2) !important;
+    outline: none;
+    background: var(--dark-color) !important;
+}
+
+.form-control::placeholder {
+    color: var(--text-muted) !important;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--white) !important;
+    margin-bottom: 6px;
+    font-size: 0.875rem;
+}
+
+/* Progress bars */
+.progress {
+    height: 6px !important;
+    border-radius: 4px !important;
+    background: var(--border-color);
+}
+
+.progress-bar {
+    border-radius: 4px;
+}
+
+/* Tâches en retard */
+.border-danger {
+    border-color: var(--danger-color) !important;
+    border-width: 2px !important;
+    background: #7f1d1d !important;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color) !important;
+    border-top: 1px solid var(--border-color) !important;
+    color: var(--text-muted) !important;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Espacements */
+.container-fluid {
+    padding: 24px;
+}
+
+/* Animations subtiles */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #layoutSidenav {
+        margin: 8px;
+        border-radius: 8px;
+    }
+    
+    .container-fluid {
+        padding: 16px;
+    }
+    
+    .card {
+        margin-bottom: 12px;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Icônes */
+.fas, .far {
+    font-size: 0.875em;
+}
+
+/* Textes */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Tableaux */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--white);
+}
+
+.table thead th {
+    background: var(--dark-color);
+    color: var(--white);
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Animations pour badges en retard */
+.badge.bg-danger {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
